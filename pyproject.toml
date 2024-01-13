@@ -1,0 +1,30 @@
+[project]
+name = "discord-py-example"
+version = "0.0.0"
+description = "more discord.py examples"
+authors = [
+    { name = "hawk-tomy", email = "67221751+hawk-tomy@users.noreply.github.com" },
+]
+dependencies = [
+    "discord.py>=2.0",
+    "click>=8.0",
+    # .
+]
+requires-python = ">=3.8.0"
+readme = "README.md"
+license = { file = "LICENSE" }
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.1.9",
+    # .
+]
+
+[project.urls]
+Source = "https://github.com/hawk-tomy/discord-py-example"
+
+[project.scripts]
+example = "main:cli"
+
+[tool.pdm]
+package-type = "application"
